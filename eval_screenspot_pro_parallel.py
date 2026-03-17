@@ -15,7 +15,7 @@ from tqdm import tqdm
 import multiprocessing as mp
 mp.set_start_method('spawn', force=True)  # Use 'spawn' to avoid issues with CUDA in multiprocessing
 
-from model_factory import build_model
+from screenspot_pro_gui_grounding.model_factory import build_model
 
 logging.basicConfig(level=logging.INFO)
 torch.manual_seed(114514)
