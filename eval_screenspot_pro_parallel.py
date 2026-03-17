@@ -158,7 +158,7 @@ def eval_sample_positive_gt(sample, response):
     img_size = sample["img_size"]
     bbox = [bbox[0] / img_size[0], bbox[1] / img_size[1], bbox[2] / img_size[0], bbox[3] / img_size[1]]
     click_point = response["point"]
-    print(click_point)
+    # print(click_point)
     if click_point is None:
         return "wrong_format"
     if (bbox[0] <= click_point[0] <= bbox[2]) and (bbox[1] <= click_point[1] <= bbox[3]):
